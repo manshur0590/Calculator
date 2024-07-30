@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <style>
+        .container {
+            align-items: center;
+            text-align: center;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: rgb(184, 207, 230);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            height: 465px;
+        }
+
+        input[type="text"] {
+            width: 250px;
+            height: 70px;
+            margin-top: 0px;
+            font-size: 35px;
+            border: none;
+            text-align: right;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            padding-right: 0.5rem;
+            box-shadow: inset 8px 8px 8px #cbcedc;
+
+        }
+
+        button {
+            cursor: pointer;
+            width: 40px;
+            height: 30px;
+            font-size: 15px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: inset 8px 8px 8px rgb(225, 188, 188);
+
+        }
+
+        .btn:hover {
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>SCIENTIFIC CALCULATOR</h3>
+        <input type="text" id="screen" placeholder="0"><br><br>
+        <button onclick="backspace()">CE</button>
+        <button onclick="factorial()">X!</button>
+        <button class="btn">(</button>
+        <button class="btn">)</button>
+        <button class="btn">%</button>
+        <button onclick="screen.value=''">CLR</button> <br><br>
+
+        <button onclick="sin()">sin</button>
+        <button onclick="pi()">&#8508;</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">/</button> <br> <br>
+
+        <button onclick="cos()">cos</button>
+        <button onclick="log()">log</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">*</button> <br><br>
+
+        <button onclick="tan()">tan</button>
+        <button onclick="sqrt()">&#8730;</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">-</button> <br><br>
+
+        <button onclick="f1()">e</button>
+        <button onclick="pow()">x <sup>2</sup></button>
+        <button class="btn">0</button>
+        <button class="btn">.</button>
+        <button onclick="screen.value=eval(screen.value);">=</button>
+        <button class="btn">+</button> <br><br>
+
+        <button onclick="radian()">Rad</button>
+        <button onclick="degree()">Deg</button>
+        <h5>Manshur Ali</h5>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
